@@ -24,5 +24,5 @@ fun main() {
         println(" [x] Consumer '$consumerTag' cancelled")
     }
 
-    channel.basicConsume(queueName, true, deliverCallback, cancelCallback)
+    channel.basicConsume(queueName, false, deliverCallback, cancelCallback)
 }
